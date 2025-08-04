@@ -18,7 +18,7 @@ const right = document.getElementById("right");
 
 left.addEventListener("click", function (e) {
     cards[cards.length - 1] = cards.shift();
-    for (const card of cards){
+    for (const card of cards) {
         container.appendChild(card)
     }
     console.log(container);
@@ -26,6 +26,10 @@ left.addEventListener("click", function (e) {
 });
 
 right.addEventListener("click", function (e) {
-    cards[0] = cards.pop();
+    cards.unshift(cards.pop());
+    container.innerHTML = "";
+    for (const card of cards) {
+        container.appendChild(card);
+    }
     console.log(cards);
 })
