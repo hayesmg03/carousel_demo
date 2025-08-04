@@ -1,14 +1,19 @@
+* {
+    font-family: "Roboto";
+}
+
 #container {
     display: flex;
     justify-content: space-evenly;
     margin-top: 25vh;
+    margin-bottom: 20px;
 }
 
 .card {
     width: 18rem;
 }
 
-.card img{
+.card img {
     width: 100%;
     margin-bottom: none;
 }
@@ -16,4 +21,9 @@
 .card-desc {
     background-color: lightblue;
     padding: 5px;
+}
+
+#arrows {
+    display: flex;
+    justify-self: center;
 }
