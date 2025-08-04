@@ -1,0 +1,19 @@
+#container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25vh;
+}
+
+.card {
+    width: 40%;
+}
+
+.card img{
+    width: 100%;
+    margin-bottom: none;
+}
+
+.card-desc {
+    background-color: lightblue;
+    padding: 5px;
+}
